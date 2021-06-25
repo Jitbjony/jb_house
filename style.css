@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	background-color: #1e1f33;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-size: 15px;
+	margin: 4px;
+}
+.header {
+	padding: 20px;
+	background-color: #292847;
+	color: #5f94b4;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+}
+.logo-brand {
+	font-size: 2rem;
+}
+form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1e1f33;
+	padding: 10px;
+}
+.form-control {
+	border-radius: 50px;
+	width: 50%;
+	background-color: #1e1f33;
+	border-color: #626262;
+	padding: 25px;
+	outline: 0;
+}
+.form-control:focus {
+	background-color: transparent;
+	border-color: #626262;
+	box-shadow: none;
+	outline: 0;
+}
+.input input[type="text "] {
+	color: aliceblue;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.input ::placeholder {
+	color: #3c3d60;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	margin-left: 0;
+	flex-wrap: wrap;
+}
+
+.movie-list {
+	background-color: #373b69;
+	border-radius: 3px;
+	/* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); */
+	overflow: hidden;
+	position: relative;
+	margin: 1rem;
+	width: 300px;
+}
+
+.movie img {
+	max-width: 100%;
+}
+.movie-info {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem 1rem;
+	letter-spacing: 0.5px;
+}
+.movie-info .rating {
+	background-color: #212139;
+	padding: 0.15rem 0.5rem;
+	border-radius: 0.5rem;
+	font-weight: 600;
+}
+
+.movie-info span.green {
+	color: #79ac4b;
+}
+
+.movie-info span.yellow {
+	color: #865123;
+}
+
+.movie-info span.red {
+	color: #892d21;
+}
+
+.overview {
+	background-color: #fff;
+	padding: 2rem;
+	position: absolute;
+	max-height: 100%;
+	overflow: auto;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transform: translateY(101%);
+	transition: transform 0.3s ease-in;
+}
+.movie-list:hover .overview {
+	transform: translateY(0);
+}
